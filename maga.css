@@ -1,0 +1,39 @@
+nav > ul{
+    display: flex;
+}
+nav li{
+    list-style: none;
+    margin-right: 2rem;
+}
+nav ul li a{
+    text-decoration: none;
+    color: black;
+}
+.dropdwn{
+    display: none;
+    position: absolute;
+    background: lightblue;
+}
+nav ul li:hover>.dropdwn{
+    display: block;
+}
+nav>ul>li:hover>.dropdwn.mega-nemu{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 2rem;
+}
+.mega-nemu{
+    font-size: 18px;
+    color: goldenrod;
+    margin-bottom: 0;
+}
+nav>ul>li:hover>.dropdwn.mega-abir{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 1rem;
+}
+.mega-abir{
+    font-size: 18px;
+    color: goldenrod;
+    margin-bottom: 0;
+}
